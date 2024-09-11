@@ -14,6 +14,10 @@ The main concepts of this typeface are
 
 The total number of fonts is 195 as of v1.0, and 156 are intended to be used. Most of them are composed of ligature.
 
+In addition, most of this font was created by adjusting the following two fonts.
+- [Lato](https://fonts.google.com/specimen/Lato)
+- [Noto Music](https://fonts.google.com/noto/specimen/Noto+Music)
+
 ##  Caution
 
 When using this font as a Web font, the following must be described in addition to the CSS description normally used(because it assumes the use of ligatures).
