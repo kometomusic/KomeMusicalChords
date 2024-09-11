@@ -2,6 +2,7 @@
 
 ![Nameplate image](documentation/images/nameplate.PNG)
 
+![Nameplate image](documentation/images/useWeb.PNG)
 
 KomeMusicalChords was created for easy notation of musical chords.
 
