@@ -1,0 +1,212 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+
+# GSUB 
+
+
+lookup defaultLiga {
+  lookupflag 0;
+    sub \A \b  by \A_flat;
+    sub \A \numbersign  by \Asharp;
+    sub \B \b  by \Bflat;
+    sub \B \numbersign  by \Bsharp;
+    sub \C \b  by \Cflat;
+    sub \C \numbersign  by \Csharp;
+    sub \D \b  by \Dflat;
+    sub \D \numbersign  by \Dsharp;
+    sub \E \b  by \Eflat;
+    sub \E \numbersign  by \Esharp;
+    sub \F \b  by \Fflat;
+    sub \F \numbersign  by \Fsharp;
+    sub \G \b  by \Gflat;
+    sub \G \numbersign  by \Gsharp;
+    sub \A \seven  by \A7;
+    sub \B \seven  by \B7;
+    sub \C \seven  by \C7;
+    sub \D \seven  by \D7;
+    sub \E \seven  by \E7;
+    sub \F \seven  by \F7;
+    sub \G \seven  by \G7;
+    sub \A \nine  by \A9;
+    sub \B \nine  by \B9;
+    sub \C \nine  by \C9;
+    sub \D \nine  by \D9;
+    sub \E \nine  by \E9;
+    sub \F \nine  by \F9;
+    sub \G \nine  by \G9;
+    sub \o \n  by \on;
+    sub \o \n \A  by \onA;
+    sub \o \n \A \b  by \onAflat;
+    sub \o \n \A \numbersign  by \onAsharp;
+    sub \o \n \B  by \onB;
+    sub \o \n \B \b  by \onBflat;
+    sub \o \n \B \numbersign  by \onBsharp;
+    sub \o \n \C  by \onC;
+    sub \o \n \C \b  by \onCflat;
+    sub \o \n \C \numbersign  by \onCsharp;
+    sub \o \n \D  by \onD;
+    sub \o \n \D \b  by \onDflat;
+    sub \o \n \D \numbersign  by \onDsharp;
+    sub \o \n \E  by \onE;
+    sub \o \n \E \b  by \onEflat;
+    sub \o \n \E \numbersign  by \onEsharp;
+    sub \o \n \F  by \onF;
+    sub \o \n \F \b  by \onFflat;
+    sub \o \n \F \numbersign  by \onFsharp;
+    sub \o \n \G  by \onG;
+    sub \o \n \G \b  by \onGflat;
+    sub \o \n \G \numbersign  by \onGsharp;
+    sub \slash \A  by \slashA;
+    sub \slash \A \b  by \slashAflat;
+    sub \slash \A \numbersign  by \slashAsharp;
+    sub \slash \B  by \slashB;
+    sub \slash \B \b  by \slashBflat;
+    sub \slash \B \numbersign  by \slashBsharp;
+    sub \slash \C  by \slashC;
+    sub \slash \C \b  by \slashCflat;
+    sub \slash \C \numbersign  by \slashCsharp;
+    sub \slash \D  by \slashD;
+    sub \slash \D \b  by \slashDflat;
+    sub \slash \D \numbersign  by \slashDsharp;
+    sub \slash \E  by \slashE;
+    sub \slash \E \b  by \slashEflat;
+    sub \slash \E \numbersign  by \slashEsharp;
+    sub \slash \F  by \slashF;
+    sub \slash \F \b  by \slashFflat;
+    sub \slash \F \numbersign  by \slashFsharp;
+    sub \slash \G  by \slashG;
+    sub \slash \G \b  by \slashGflat;
+    sub \slash \G \numbersign  by \slashGsharp;
+    sub \m \six  by \m6;
+    sub \m \seven  by \m7;
+    sub \m \nine  by \m9;
+    sub \m \M \seven  by \mM7;
+    sub \M \seven  by \M7;
+    sub \M \nine  by \M9;
+    sub \a \u \g  by \aug;
+    sub \a \u \g \seven  by \aug7;
+    sub \a \u \g \M \seven  by \augM7;
+    sub \d \i \m  by \dim;
+    sub \d \i \m \seven  by \dim7;
+    sub \a \d \d \nine  by \add9;
+    sub \s \u \s \four  by \sus4;
+    sub \s \u \s \two  by \sus2;
+    sub \o \m \i \t \three  by \omit3;
+    sub \o \l  by \harfDiminish;
+    sub \M \a \j  by \Maj;
+    sub \m \M \a \j \seven  by \mMaj7;
+    sub \M \a \j \seven  by \Maj7;
+    sub \M \a \j \nine  by \Maj9;
+    sub \b \five  by \tflat5;
+    sub \numbersign \five  by \tsharp5;
+    sub \b \nine  by \tflat9;
+    sub \n \nine  by \t9;
+    sub \numbersign \nine  by \tsharp9;
+    sub \b \one \one  by \tb11;
+    sub \one \one  by \t11;
+    sub \numbersign \one \one  by \tsharp11;
+    sub \b \one \three  by \tflat13;
+    sub \one \three  by \t13;
+    sub \hyphen \five  by \tminus5;
+    sub \plus \five  by \tplus5;
+    sub \hyphen \nine  by \tminus9;
+    sub \plus \nine  by \tplus9;
+    sub \hyphen \one \one  by \tminus11;
+    sub \plus \one \one  by \tplus11;
+    sub \hyphen \one \three  by \tminus13;
+    sub \r \one  by \rep1;
+    sub \r \two  by \rep2;
+    sub \r \three  by \rep3;
+    sub \r \four  by \rep4;
+    sub \D \S  by \dalsegno;
+    sub \D \C  by \dacapo;
+    sub \d \s  by \segno;
+    sub \d \c  by \capo;
+    sub \f \i \n \e  by \fine;
+    sub \one \r  by \roman1;
+    sub \two \r  by \roman2;
+    sub \three \r  by \roman3;
+    sub \four \r  by \roman4;
+    sub \five \r  by \roman5;
+    sub \six \r  by \roman6;
+    sub \seven \r  by \roman7;
+    sub \b \one \r  by \romanflat1;
+    sub \numbersign \one \r  by \romansharp1;
+    sub \b \two \r  by \romanflat2;
+    sub \numbersign \two \r  by \romansharp2;
+    sub \b \three \r  by \romanflat3;
+    sub \numbersign \three \r  by \romansharp3;
+    sub \b \four \r  by \romanflat4;
+    sub \numbersign \four \r  by \romansharp4;
+    sub \b \five \r  by \romanflat5;
+    sub \numbersign \five \r  by \romansharp5;
+    sub \b \six \r  by \romanflat6;
+    sub \numbersign \six \r  by \romansharp6;
+    sub \b \seven \r  by \romanflat7;
+    sub \numbersign \seven \r  by \romansharp7;
+    sub \one \b \r  by \roman1flat;
+    sub \one \numbersign \r  by \roman1sharp;
+    sub \two \b \r  by \roman2flat;
+    sub \two \numbersign \r  by \roman2sharp;
+    sub \three \b \r  by \roman3flat;
+    sub \three \numbersign \r  by \roman3sharp;
+    sub \four \b \r  by \roman4flat;
+    sub \four \numbersign \r  by \roman4sharp;
+    sub \five \b \r  by \roman5flat;
+    sub \five \numbersign \r  by \roman5sharp;
+    sub \six \b \r  by \roman6flat;
+    sub \six \numbersign \r  by \roman6sharp;
+    sub \seven \b \r  by \roman7flat;
+    sub \seven \numbersign \r  by \roman7sharp;
+} defaultLiga;
+
+feature  RQD {
+
+ script DFLT;
+     language dflt ;
+      lookup defaultLiga;
+
+ script latn;
+     language dflt ;
+      lookup defaultLiga;
+}  RQD;
+
+feature liga {
+
+ script DFLT;
+     language dflt ;
+      lookup defaultLiga;
+
+ script latn;
+     language dflt ;
+      lookup defaultLiga;
+} liga;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\numbersign \parenleft \parenright \plus \hyphen \comma \slash 
+	\zero \one \two \three \four \five \six \seven \eight \nine \A \B \C \D \E \F \G \M \a \b \d 
+	\g \i \j \l \m \n \o \s \t \u \r \c \e \f \S \space \uni00A0 ];
+@GDEF_Ligature = [\A_flat \Asharp \Bflat \Bsharp \Cflat \Csharp \Dflat \Dsharp 
+	\Eflat \Esharp \Fflat \Fsharp \Gflat \Gsharp \A7 \B7 \C7 \D7 \E7 \F7 \G7 \A9 \B9 \C9 \D9 
+	\E9 \F9 \G9 \on \onA \onAflat \onAsharp \onB \onBflat \onBsharp \onC \onCflat 
+	\onCsharp \onD \onDflat \onDsharp \onE \onEflat \onEsharp \onF \onFflat \onFsharp 
+	\onG \onGflat \onGsharp \slashA \slashAflat \slashAsharp \slashB \slashBflat 
+	\slashBsharp \slashC \slashCflat \slashCsharp \slashD \slashDflat \slashDsharp 
+	\slashE \slashEflat \slashEsharp \slashF \slashFflat \slashFsharp \slashG 
+	\slashGflat \slashGsharp \m6 \m7 \m9 \mM7 \M7 \M9 \aug \aug7 \augM7 \dim \dim7 \add9 
+	\sus4 \sus2 \omit3 \harfDiminish \Maj \mMaj7 \Maj7 \Maj9 \tflat5 \tsharp5 \tflat9 
+	\t9 \tsharp9 \tb11 \t11 \tsharp11 \tflat13 \t13 \tminus5 \tplus5 \tminus9 \tplus9 
+	\tminus11 \tplus11 \tminus13 \rep1 \rep2 \rep3 \rep4 \dalsegno \dacapo \segno 
+	\capo \fine \roman1 \roman2 \roman3 \roman4 \roman5 \roman6 \roman7 \romanflat1 
+	\romansharp1 \romanflat2 \romansharp2 \romanflat3 \romansharp3 \romanflat4 
+	\romansharp4 \romanflat5 \romansharp5 \romanflat6 \romansharp6 \romanflat7 
+	\romansharp7 \roman1flat \roman1sharp \roman2flat \roman2sharp \roman3flat 
+	\roman3sharp \roman4flat \roman4sharp \roman5flat \roman5sharp \roman6flat 
+	\roman6sharp \roman7flat \roman7sharp ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, , ;
+
+} GDEF;
+
