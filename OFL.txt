@@ -1,4 +1,4 @@
-Copyright 2024 The KomeMusicalChord Project Authors (https://github.com/yumegekijoh/KomeMusicalChord)
+Copyright 2024 The KomeMusicalChord Project Authors (https://github.com/kometomusic/KomeMusicalChords)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
